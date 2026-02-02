@@ -9,10 +9,10 @@
     <nav>
       <p>Portfolio</p>
       <ul>
-        <li>Início</li>
-        <li>Sobre</li>
-        <li>Pojetos</li>
-        <li>Contatos</li>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Pojetos</a></li>
+        <li><a href="#contact">Contatos</a></li>
       </ul>
     </nav>
     <main>
@@ -80,28 +80,70 @@
       <section id="projects">
         <h2>Meus Projetos</h2>
         <article>
-            <button>Left arrow</button>
-            <div class="project-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Title</h3>
-                    <p>Descriptions</p>
-                    <p><span>keyword</span></p>
-                </div>
-                <div>
-                    <button>Github</button>
-                </div>
+          <button>Left arrow</button>
+          <div class="project-card">
+            <div>
+              <img src="" alt="" />
             </div>
-            <button>right arrow</button>
-            <aside>
-                ...
-            </aside>
+            <div>
+              <h3>Title</h3>
+              <p>Descriptions</p>
+              <p><span>keyword</span></p>
+            </div>
+            <div>
+              <button>Github</button>
+            </div>
+          </div>
+          <button>right arrow</button>
+          <aside>...</aside>
         </article>
       </section>
-      <section id="contact"></section>
+      <section id="contact">
+        <article>
+          <h2>Entre em contato</h2>
+          <p>Sinta-se à vontade para entrar em contato comigo!</p>
+          <aside>
+            <img src="" alt="linkedin-icon" />
+            <img src="" alt="github-icon" />
+            <img src="" alt="instagram-icon" />
+          </aside>
+        </article>
+        <article>
+          <form action="">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Digite o seu nome completo"
+            />
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite o seu email"
+            />
+            <label for="subject">Assunto</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Digite o assunto da mensagem"
+            />
+            <label for="message">Mensagem</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="30"
+              placeholder="Escreva a sua mensagem aqui..."
+            ></textarea>
+            <input type="submit" value="Enviar Mensagem" />
+          </form>
+        </article>
+      </section>
     </main>
-    <footer></footer>
+    <footer>Desenvolvido por Raylander Ribeiro - rayribeirost - 2026</footer>
   </body>
 </html>
