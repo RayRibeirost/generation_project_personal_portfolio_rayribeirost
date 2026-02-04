@@ -229,4 +229,71 @@ header a:hover {
     animation: float 3s ease-in-out infinite;
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    margin: var(--spacing-2xl) auto;
+    border-radius: var(--radius-lg);
+    background-color: var(--gray-200);
+}
 
+.about-image {
+    flex: 0 0 17.5rem;
+}
+
+.about-image img {
+    width: 100%;
+    border: 0.35rem solid var(--purple-500);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-lg);
+}
+
+.about-content h2, .projects-container h2, .contact-info h2 {
+    margin-bottom: var(--spacing-md);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--purple-800);
+}
+
+.about-content p {
+    margin-bottom: var(--spacing-sm);
+    text-align: justify;
+}
+
+.about-buttons-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.about-buttons-data .botao {
+    margin-right: auto;
+}
+
+.data-container {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: 0;
+}
+
+.data-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-number {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    text-align: center;
+    color: var(--purple-500);
+}
+
+.data-label {
+    font-size: var(--text-base);
+    text-align: center;
+    color: var(--gray-400);
+}
