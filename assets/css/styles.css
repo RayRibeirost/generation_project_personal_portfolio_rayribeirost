@@ -70,3 +70,61 @@ body {
 main {
     flex: 1;
 }
+
+.section-container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+    scroll-margin-top: 6rem;
+}
+
+.buttons-container {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.botao, .botao-outline {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 0.15rem solid transparent;
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+.botao {
+    border-color: var(--purple-500);
+    background-color: var(--purple-500);
+    color: var(--white);
+}
+
+.botao:hover {
+    border-color: var(--purple-800);
+    background-color: var(--purple-800);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-0.25rem);
+}
+
+.botao-outline {
+    border-color: var(--purple-500);
+    background-color: transparent;
+    color: var(--purple-500);
+}
+
+.botao-outline:hover {
+    border-color: var(--purple-500);
+    background-color: var(--purple-500);
+    color: var(--white);
+    transform: translateY(-0.25rem);
+}
+
+.botao.botao-sm, .botao-outline.botao-sm {
+    min-width: 6rem;
+    padding: 0.25rem var(--spacing-sm);
+    border-width: 0.125rem;
+    border-radius: 0.25rem;
+    font-size: var(--text-sm);
+}
