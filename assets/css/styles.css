@@ -174,3 +174,59 @@ header a:hover {
 .menu-list a {
     padding: var(--spacing-xs);
 }
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    min-height: calc(100vh - 5rem);
+}
+
+.hero-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.hero-content span {
+    font-size: var(--text-xl);
+    font-weight: 700;
+}
+
+.hero-content h1 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+}
+
+.hero-content p, .about-content p, .contact-info p {
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+}
+
+.hero-image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: var(--radius-xl);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1.25rem);
+    }
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+
