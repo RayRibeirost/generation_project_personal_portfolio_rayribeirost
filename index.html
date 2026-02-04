@@ -3,149 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta name="author" content="Raylander Ribeiro" />
+    <meta
+      name="description"
+      content="Portfólio de Raylander Ribeiro, 
+              desenvolvedor Full Stack especializado em criar experiências 
+              digitais incríveis. Conheça meus projetos e entre em contato."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Raylander Ribeiro - Fullstack Dev - Portfolio</title>
   </head>
   <body>
-    <nav>
-      <p>Portfolio</p>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#projects">Pojetos</a></li>
-        <li><a href="#contact">Contatos</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div class="menu-content">
+        <a href="index.html" id="titulo">Portfolio</a>
+
+        <nav>
+          <ul class="menu-list">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Pojetos</a></li>
+            <li><a href="#contact">Contatos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main>
-      <section id="home">
-        <article>
-          <h2>Olá, eu sou Raylander Ribeiro</h2>
+      <section id="hero" class="section-container hero-container">
+        <article class="hero-content">
+          <span>Olá, eu sou Raylander Ribeiro</span>
           <h1>Desenvolvedor Fullstack</h1>
           <p>
             Transformo ideias em código e crio experiências digitais incríveis.
           </p>
-          <div>
-            <button>Entre em Contato</button>
-            <button>Saiba Mais...</button>
+          <div class="buttons-container">
+            <a href="#contact" class="botao">Entre em Contato</a>
+            <a href="#about" class="botao-outline">Saiba Mais...</a>
           </div>
         </article>
-        <aside>
-          <img src="" alt="" />
-        </aside>
+
+        <figure class="hero-image">
+          <img
+            src="./assets/img/foto_dev_man.svg"
+            alt="Foto do autor"
+            class="float-animation"
+          />
+        </figure>
       </section>
-      <section id="about">
-        <aside>
-          <img src="" alt="" />
-        </aside>
-        <article>
-          <div>
-            <h2>Sobre mim</h2>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              praesentium culpa obcaecati dolorum quos molestiae atque
-              voluptatibus! Labore, deserunt! Error ipsum debitis corrupti,
-              quaerat non excepturi ullam esse quo delectus sint illo ex
-              repellat ipsam. Corrupti provident voluptates, accusamus vitae
-              porro culpa doloribus? Sint dolor expedita quasi dicta magni?
-              Distinctio officiis, reprehenderit aliquid minus, est
-              exercitationem dolorum alias dolores voluptatibus repellat at
-              nulla consequuntur dicta dolore cupiditate modi perspiciatis quia
-              sit aut molestias aperiam similique. Consequuntur perspiciatis
-              voluptas debitis ipsam ut doloribus velit officiis fugit facere
-              nihil numquam sapiente nulla non nobis, laboriosam ducimus hic
-              animi autem. Accusantium, aliquid provident!
-            </p>
-          </div>
-          <div>
-            <div>
-              <button>Ver Github</button>
-              <button>Currículo</button>
+
+      <section id="about" class="section-container about-container">
+        <figure>
+          <img src="./assets/img/avatar_dev_man.svg" alt="foto do perfil" />
+        </figure>
+
+        <article class="about-content">
+          <h2>Sobre mim</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            praesentium culpa obcaecati dolorum quos molestiae atque
+            voluptatibus! Labore, deserunt! Error ipsum debitis corrupti,
+            quaerat non excepturi ullam esse quo delectus sint illo ex repellat
+            ipsam. Corrupti provident voluptates, accusamus vitae porro culpa
+            doloribus? Sint dolor expedita quasi dicta magni? Distinctio
+            officiis, reprehenderit aliquid minus, est exercitationem dolorum
+            alias dolores voluptatibus repellat at nulla consequuntur dicta
+            dolore cupiditate modi perspiciatis quia sit aut molestias aperiam
+            similique. Consequuntur perspiciatis voluptas debitis ipsam ut
+            doloribus velit officiis fugit facere nihil numquam sapiente nulla
+            non nobis, laboriosam ducimus hic animi autem. Accusantium, aliquid
+            provident!
+          </p>
+
+          <div class="about-buttons-data">
+            <div class="buttons-container">
+              <a href="#" target="_blank" class="botao">Ver Github</a>
+              <a href="#" target="_blank" class="botao-outline">Currículo</a>
             </div>
-            <div>
-              <p>
-                <span>743</span>
-                <br />
-                seguidores
-              </p>
-              <p>
-                <span>40</span>
-                <br />
-                repositórios
-              </p>
+
+            <div class="data-container">
+              <div class="data-item">
+                <span class="data-number">743</span>
+                <span class="data-label">seguidores</span>
+              </div>
+
+              <div class="data-item">
+                <span class="data-number">40</span>
+                <span class="data-label">repositórios</span>
+              </div>
             </div>
           </div>
         </article>
       </section>
-      <section id="projects">
+
+      <section id="projects" class="section-container projects-container">
         <h2>Meus Projetos</h2>
-        <article>
-          <button>Left arrow</button>
-          <div class="project-card">
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <h3>Title</h3>
-              <p>Descriptions</p>
-              <p><span>keyword</span></p>
-            </div>
-            <div>
-              <button>Github</button>
+        <div class="swiper projects-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="project-card">
+                <figure class="project-image">
+                  <img
+                    src="./assets/icons/languages/github.svg"
+                    alt="icone github"
+                  />
+                </figure>
+                <div class="project-content">
+                  <h3>Projeto Github</h3>
+                  <p>Projeto Desenvolvido no github</p>
+                  <div class="project-tags">
+                    <span class="tag">Github</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="#" target="_blank" class="botao botao-sm"
+                      >Github</a
+                    >
+                    <a href="#" target="_blank" class="botao-outline botao-sm"
+                      >Deploy</a
+                    >
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
-          <button>right arrow</button>
-          <aside>...</aside>
-        </article>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
-      <section id="contact">
-        <article>
+
+      <section id="contact" class="section-container contact-container">
+        <article class="contact-info">
           <h2>Entre em contato</h2>
           <p>Sinta-se à vontade para entrar em contato comigo!</p>
-          <aside>
-            <img src="" alt="linkedin-icon" />
-            <img src="" alt="github-icon" />
-            <img src="" alt="instagram-icon" />
-          </aside>
+
+          <div class="social-container">
+            <a
+              href="#"
+              target="_blank"
+              class="social-icon"
+              aria-label="Linkedin"
+            >
+              <img
+                src="./assets/icons/social/linkedin.svg"
+                alt="link para linkedin"
+              />
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="Github">
+              <img
+                src="./assets/icons/social/github.svg"
+                alt="link para github"
+              />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <img
+                src="./assets/icons/social/instagram.svg"
+                alt="link para instagram"
+              />
+            </a>
+          </div>
         </article>
-        <article>
-          <form action="">
-            <label for="name">Nome</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Digite o seu nome completo"
-            />
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Digite o seu email"
-            />
-            <label for="subject">Assunto</label>
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="Digite o assunto da mensagem"
-            />
-            <label for="message">Mensagem</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="30"
-              placeholder="Escreva a sua mensagem aqui..."
-            ></textarea>
-            <input type="submit" value="Enviar Mensagem" />
-          </form>
-        </article>
+
+        <form action="" id="formulario">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Digite o seu nome completo"
+          />
+          <span id="erro-name"></span>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite o seu email"
+          />
+          <span id="erro-email"></span>
+          <label for="subject">Assunto</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Digite o assunto da mensagem"
+          />
+          <span id="erro-subject"></span>
+          <label for="message">Mensagem</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="30"
+            placeholder="Escreva a sua mensagem aqui..."
+          ></textarea>
+          <button class="botao" type="submit">Enviar Mensagem</button>
+        </form>
       </section>
     </main>
+
     <footer>Desenvolvido por Raylander Ribeiro - rayribeirost - 2026</footer>
+
     <script src="./assets/js/scripts.js"></script>
   </body>
 </html>
