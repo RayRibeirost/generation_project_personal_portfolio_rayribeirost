@@ -128,3 +128,49 @@ main {
     border-radius: 0.25rem;
     font-size: var(--text-sm);
 }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 5rem;
+    border-bottom: var(--spacing-xs) solid var(--gray-200);
+    background-color: var(--purple-800);
+    box-shadow: var(--shadow-sm);
+}
+
+header a {
+    font-weight: 600;
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: var(--purple-100);
+}
+
+#titulo {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.menu-list {
+    display: flex;
+    gap: var(--spacing-lg);
+    list-style: none;
+}
+
+.menu-list a {
+    padding: var(--spacing-xs);
+}
