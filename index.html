@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Raylander Ribeiro" />
@@ -16,6 +22,7 @@
       href="./assets/img/favicon.svg"
       type="image/svg+xml"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Raylander Ribeiro - Fullstack Dev - Portfolio</title>
   </head>
@@ -59,7 +66,7 @@
       </section>
 
       <section id="about" class="section-container about-container">
-        <figure>
+        <figure class="about-image">
           <img src="./assets/img/avatar_dev_man.svg" alt="foto do perfil" />
         </figure>
 
@@ -69,14 +76,10 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
             praesentium culpa obcaecati dolorum quos molestiae atque
-            voluptatibus! Labore, deserunt! Error ipsum debitis corrupti,
-            quaerat non excepturi ullam esse quo delectus sint illo ex repellat
-            ipsam. Corrupti provident voluptates, accusamus vitae porro culpa
-            doloribus? Sint dolor expedita quasi dicta magni? Distinctio
-            officiis, reprehenderit aliquid minus, est exercitationem dolorum
-            alias dolores voluptatibus repellat at nulla consequuntur dicta
-            dolore cupiditate modi perspiciatis quia sit aut molestias aperiam
-            similique. Consequuntur perspiciatis voluptas debitis ipsam ut
+            voluptatibus! Labore, deserunt!
+          </p>
+          <p>
+            Consequuntur perspiciatis voluptas debitis ipsam ut
             doloribus velit officiis fugit facere nihil numquam sapiente nulla
             non nobis, laboriosam ducimus hic animi autem. Accusantium, aliquid
             provident!
@@ -205,8 +208,6 @@
           <textarea
             name="message"
             id="message"
-            cols="30"
-            rows="30"
             placeholder="Escreva a sua mensagem aqui..."
           ></textarea>
           <button class="botao" type="submit">Enviar Mensagem</button>
