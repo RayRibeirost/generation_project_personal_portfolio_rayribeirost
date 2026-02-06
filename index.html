@@ -22,7 +22,10 @@
       href="./assets/img/favicon.svg"
       type="image/svg+xml"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Raylander Ribeiro - Fullstack Dev - Portfolio</title>
   </head>
@@ -67,7 +70,11 @@
 
       <section id="about" class="section-container about-container">
         <figure class="about-image">
-          <img src="./assets/img/avatar_dev_man.svg" alt="foto do perfil" />
+          <img
+            src="./assets/img/avatar_dev_man.svg"
+            alt="foto do perfil"
+            id="gh-profile-image"
+          />
         </figure>
 
         <article class="about-content">
@@ -79,26 +86,32 @@
             voluptatibus! Labore, deserunt!
           </p>
           <p>
-            Consequuntur perspiciatis voluptas debitis ipsam ut
-            doloribus velit officiis fugit facere nihil numquam sapiente nulla
-            non nobis, laboriosam ducimus hic animi autem. Accusantium, aliquid
-            provident!
+            Consequuntur perspiciatis voluptas debitis ipsam ut doloribus velit
+            officiis fugit facere nihil numquam sapiente nulla non nobis,
+            laboriosam ducimus hic animi autem. Accusantium, aliquid provident!
           </p>
 
           <div class="about-buttons-data">
             <div class="buttons-container">
-              <a href="#" target="_blank" class="botao">Ver Github</a>
-              <a href="#" target="_blank" class="botao-outline">Currículo</a>
+              <a href="#" target="_blank" class="botao" id="gh-profile-url"
+                >Ver Github</a
+              >
+              <a
+                href="./assets/docs/Raylander Ribeiro - Currículo Generation v2.pdf"
+                target="_blank"
+                class="botao-outline"
+                >Currículo</a
+              >
             </div>
 
             <div class="data-container">
               <div class="data-item">
-                <span class="data-number">743</span>
+                <span class="data-number" id="gh-profile-followers">743</span>
                 <span class="data-label">seguidores</span>
               </div>
 
               <div class="data-item">
-                <span class="data-number">40</span>
+                <span class="data-number" id="gh-repos-public">40</span>
                 <span class="data-label">repositórios</span>
               </div>
             </div>
@@ -179,7 +192,17 @@
           </div>
         </article>
 
-        <form action="" id="formulario">
+        <form
+          id="formulario"
+          action="https://formsubmit.co/2327bd022109b54a5ef8d2bf54f32b0b"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="http://localhost:5500/success.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
           <label for="name">Nome</label>
           <input
             type="text"
@@ -210,6 +233,7 @@
             id="message"
             placeholder="Escreva a sua mensagem aqui..."
           ></textarea>
+          <span id="erro-message"></span>
           <button class="botao" type="submit">Enviar Mensagem</button>
         </form>
       </section>
@@ -217,6 +241,7 @@
 
     <footer>Desenvolvido por Raylander Ribeiro - rayribeirost - 2026</footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
   </body>
 </html>
