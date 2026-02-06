@@ -1,10 +1,21 @@
 "use strict";
 
+const form = document.getElementById('formulario')
 const ghProfileImage = document.getElementById("gh-profile-image");
 const ghProfileUrl = document.getElementById("gh-profile-url");
 const ghProfileFollowers = document.getElementById("gh-profile-followers");
 const ghReposPublic = document.getElementById("gh-repos-public");
 const swiperWrapper = document.querySelector(".swiper-wrapper");
+const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const formName = document.getElementById("name");
+const erroName = document.getElementById("erro-name");
+const email = document.getElementById("email");
+const erroEmail = document.getElementById("erro-email");
+const subject = document.getElementById("subject");
+const erroSubject = document.getElementById("erro-subject");
+const message = document.getElementById("message");
+const erroMessage = document.getElementById("erro-message");
+const submitButton = form.querySelector('button[type="submit"]');
 
 async function getGithubInfos(url) {
   try {
@@ -166,6 +177,37 @@ async function changeProjectInfos() {
   });
   startSwiper();
 }
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.querySelectorAll('form span').forEach(span => span.innerHTML = '')
+    let isValid = true;
+    if(formName.value.trim().length < 3) {
+        erroName.innerHTML = "O Nome dever ter no mínimo 3 caracteres";
+        if(isValid) formName.focus();
+        isValid = false;
+    }
+    if(!email.value.trim().match(emailRegex)) {
+        erroEmail.innerHTML = 'Digite um email válido.';
+        if(isValid) email.focus();
+        isValid = false;
+    }
+    if(subject.value.trim().length < 5) {
+        erroSubject.innerHTML = 'O assunto deve ter no mínimo 5 caracteres.';
+        if (isValid) assunto.focus();
+        isValid = false;
+    }
+    if(message.value.trim().length === 0) {
+        erroMessage.innerHTML = "A mensagem não pode ser vazia";
+        if (isValid) message.focus();
+        isValid = false;
+    }
+    if (isValid) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Enviando...';
+        form.submit();
+    }
+})
 
 changeAboutInfos();
 changeProjectInfos();
